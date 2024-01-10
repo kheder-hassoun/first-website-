@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for responsive design -->
+    <title>kheder home page</title> <!-- Page title displayed in the browser tab -->
+    
+    <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" href="master.css">
+    
+
+    <!-- this is for message animation -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- الترتيب مهممممممم -->
+        <!-- Link to an external JavaScript file -->
+        <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1 class="hi-msg">Hi kheder </h1>
+        <nav>
+            <ul>
+                <li><a style="color: rgb(4, 189, 4);" href="#">Home</a></li>
+                <li><a style="color: rgb(2, 141, 2);" href="#">section2</a></li>
+                
+                   <!-- Button to toggle the drawer -->
+                <li><button style="color: rgb(128, 41, 1);" class="drawer-button" onclick="toggleDrawer()">about</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>message : </h2>
+            <p >  I 💕 you 4ever</p>
+        </section>
+
+        <section>
+            <h2 class="for-hadool"> for hadool 💞 </h2>
+            <div class="button-group-hadool">
+                <button onclick="openCardPage()" class="button1-hadool">Love❤</button>
+                <button onclick="openGamePage()" class="button2-hadool">Game🎮</button>
+                <button onclick="openCardPage()" class="button3-hadool">click me</button>
+            </div>
+            <p class="message"> ❤ I 🐝 🍂 in you hadool 💕</p>  
+        </section>
+        
+        <section>
+            <h2 class="setting"> setting ⚙ </h2>
+            <!-- Switch button for dark/light mode with labels -->
+            <div class="mode-switch-container">
+                <span style="color: rgb(51, 50, 50);" class="mode-label">Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="modeSwitch" onclick="toggleDarkMode()">
+                    <span class="slider round"></span>
+                </label>
+                <span style="color: rgb(112, 111, 111);" class="mode-label">Light Mode</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact 📱</h2>
+            <address>
+                <p>facebook: <a href="https://www.facebook.com/khdr.hasson.5/" target="_blank">kheder.facebook.com</a></p>
+            </address>
+        </section>
+    </main>
+    
+    <!-- The drawer element with an initial hidden state -->
+    <div id="drawer" class="drawer">
+        <!-- Content of the drawer -->
+        <section style="margin-top: 20px;">
+            <h2>about : </h2>
+            <p > this is home page </p>
+            <p > the content will periodecly update </p>
+        </section>
+        <section>
+            <button style="color: red; margin-left: 30%;" class="drawer-button" onclick="toggleDrawer()">Close this  X</button>
+        </section>
+    </div>
+    
+    <footer>
+        <p style="margin-bottom: 50px;">&copy; kheder 23/24 </p>
+    </footer>
+</body>
+</html>

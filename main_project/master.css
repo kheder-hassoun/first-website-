@@ -1,0 +1,236 @@
+/* CSS Comments */
+
+/* Define dark theme colors */
+:root {
+    --background-color: #222; /* Dark background color */
+    --background-color-level-two: #030303;
+    --background-color-level-three: #141414;
+    --font-color: #fff; /* Light font color */
+}
+
+.hi-msg {
+
+    font-style: italic;
+    animation: 5s blink ease-out infinite;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.drawer-button{
+    background-color:var(--background-color);
+    border: none;  /* Remove borders */
+    border-radius: 10%; 
+}
+.drawer {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: var(--background-color-level-three);
+    color: var(--font-color);
+    transition: right 0.3s;
+}
+
+.drawer.open {
+    right: 0;
+}
+/* dark and light  */
+/* Enhanced styles for the switch and labels */
+.mode-switch-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .mode-label {
+    margin: 0 10px;
+    color: var(--font-color);
+  }
+  
+  /* Updated styles for the switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3f3f3f;
+    transition: 0.7s;
+    border-radius: 34px; /* Round slider */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgba(71, 3, 3, 0.671);
+    transition: 0.4s;
+    border-radius: 50%; /* Round slider handle */
+  }
+  
+  input:checked + .slider {
+    background-color: #6ab2ee;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+
+
+
+
+
+
+/* Style the body element */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: rgb(83, 3, 3);
+}
+p{
+    color: #494848;
+}
+/* Style the header */
+header {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    padding: 0px;
+    text-align: center;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+/* Style the main content */
+main {
+    margin: 10px;
+}
+
+section {
+    background-color: var(--background-color-level-two);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Adjust the value to your preference */
+}
+
+
+/* Style the footer */
+footer {
+    background-color: var(--background-color);
+    color:var(--font-color);
+    text-align: center;
+    padding: 10px;
+}
+.button-group-hadool{
+    display: flex;  /* Align buttons horizontally */
+    justify-content: space-evenly;  /* Distribute buttons evenly */
+
+}
+.button-group-hadool button {
+    margin-left: 5px;
+    /* Optional styling for buttons */
+    background-color: var(--background-color);  /* Green background */
+    border: none;  /* Remove borders */
+    border-radius: 10%;  /* Add rounded corners with a 50% radius */
+    color: rgb(104, 4, 4);  /* White text */
+    padding: 5px 5px;  /* Add padding */
+    text-align: center;  /* Center text */
+    text-decoration: none;  /* Remove underline */
+    display: inline-block;  /* Prevent buttons from taking up full width */
+    font-size: 16px;  /* Set font size */
+    cursor: pointer;  /* Pointer/hand icon */
+  }
+  .message {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000; /* Border to simulate cursor */
+  }
+/* Add keyframes for the animated text */
+@keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px); /* Adjust the distance to move to the right */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply the keyframes to the animated text class */
+  .for-hadool{
+    animation: moveRight 2s infinite; /* Adjust the duration as needed */
+  }
+  
+  
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+@keyframes blink {
+    0% {
+      color: rgb(5, 5, 5);
+    }
+  
+    20% {
+      color: rgb(192, 192, 4);
+    }
+  
+    40% {
+      color: rgb(3, 226, 21);
+    }
+  
+    60% {
+      color: red;
+    }
+  
+    80% {
+      color: rgb(250, 9, 129);
+    }
+  
+    100% {
+      color: blue;
+    }
+  }
